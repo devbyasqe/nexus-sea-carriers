@@ -1,14 +1,90 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
+  --accent: 0, 0%, 98%;
+  --background: 0, 0%, 95%;
+  --muted: 0, 0%, 91%;
+
+  --primary: 14, 97%, 49%;
+  --success: 41, 87%, 64%;
+  --secondary: 0, 0%, 5%;
+
+  --foreground: 0, 0%, 10%;
+  --foreground-muted: 0, 0%, 45%;
+  --foreground-secondary: 0, 0%, 90%;
+
+  --black: 0, 0%, 5%;
+  --white: 0, 0%, 95%;
+
+  --border: 0, 0%, 83%;
+}
+
+.dark {
+  --accent: 0, 0%, 2%;
+  --background: 0, 0%, 5%;
+  --muted: 0, 0%, 9%;
+
+  --primary: 14, 97%, 45%;
+  --success: 41, 87%, 50%;
+  --secondary: 0, 0%, 95%;
+
+  --foreground: 0, 0%, 90%;
+  --foreground-muted: 0, 0%, 55%;
+  --foreground-secondary: 0, 0%, 10%;
+
+  --border: 0, 0%, 17%;
 }
 
 @theme inline {
   --font-sans: var(--font-reddit-sans);
   --font-serif: var(--font-merriweather-serif);
+
+  --color-*: initial;
+  --color-accent: hsl(var(--accent));
+  --color-background: hsl(var(--background));
+  --color-muted: hsl(var(--muted));
+
+  --color-primary: hsl(var(--primary));
+  --color-success: hsl(var(--success));
+  --color-secondary: hsl(var(--secondary));
+
+  --color-foreground: hsl(var(--foreground));
+  --color-foreground-muted: hsl(var(--foreground-muted));
+  --color-foreground-secondary: hsl(var(--foreground-secondary));
+
+  --color-black: hsl(var(--black));
+  --color-white: hsl(var(--white));
+
+  --color-border: hsl(var(--border));
 }
 
 @layer base {
-  body {
-    @apply font-sans antialiased;
+  * {
+    @apply border-border outline-none select-none;
   }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1 {
+    @apply text-5xl font-semibold tracking-tight transition-all duration-300 lg:text-6xl;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+input[type="date"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
