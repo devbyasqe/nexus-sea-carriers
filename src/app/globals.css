@@ -1,0 +1,14 @@
+@import "tailwindcss";
+:root {
+}
+
+@theme inline {
+  --font-sans: var(--font-reddit-sans);
+  --font-serif: var(--font-merriweather-serif);
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
