@@ -11,14 +11,14 @@ import React from "react";
 
 const HomePage = () => (
   <>
-    {/* <HomeHero />
+    <HomeHero />
     <Partners />
     <ServiceOverview />
     <OceanServices />
     <HowItWork />
     <KeyBenefit />
     <SuccessStories />
-    <Faq />*/}
+    <Faq />
     <Cta />
   </>
 );

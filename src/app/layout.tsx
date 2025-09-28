@@ -5,6 +5,7 @@ import ThemeProvider from "@/components/providers/theme";
 import Toaster from "@/components/providers/sonner";
 import LenisProvider from "@/components/providers/lenis";
 import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 const reddit = Reddit_Sans({
   variable: "--font-reddit-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LenisProvider />
+          <Navbar />
           <main>{children}</main>
           <Toaster />
           <Footer />

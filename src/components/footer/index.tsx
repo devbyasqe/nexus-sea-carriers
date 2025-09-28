@@ -66,11 +66,16 @@ const Footer = () => {
     <footer className="mx-auto max-w-5xl min-w-80 overflow-clip sm:max-md:max-w-[40rem]">
       <div className="mx-auto w-[93%] px-4 pt-14 pb-10">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-3 lg:grid-cols-4">
-          <div className="col-span-full py-8 lg:col-span-2">
-            <h3>Ready to ship smarter?</h3>
-            <Button className="mt-3" variant={"success"}>
-              Contact Us
-            </Button>
+          <div className="col-span-full py-8 lg:col-span-2  flex items-center gap-10 flex-wrap md:items-start">
+            <div className="h-12">
+              <LogoIcon className="size-full fill-success" />
+            </div>
+            <div className="">
+              <h3>Ready to ship smarter?</h3>
+              <Button className="mt-3" variant={"primary"}>
+                Contact Us
+              </Button>
+            </div>
           </div>
           {footerNavLinks.map(({ Links, title }, index) => (
             <div key={title} className="">
@@ -84,17 +89,14 @@ const Footer = () => {
           ))}
         </div>
         <div className="mt-14 flex flex-wrap items-center justify-between gap-10">
-          <div className="h-12">
-            <LogoIcon className="size-full" />
-          </div>
-          <p className="text-foreground-muted mt-2 text-sm tracking-tight whitespace-nowrap max-lg:order-3">
+          <p className="text-foreground-muted mt-2 text-sm tracking-tight whitespace-nowrap">
             Copyright
             <span className="text-foreground inline-flex px-1 font-medium">
               &copy;NEXUS SEA CARRIERS
             </span>
             {new Date().getFullYear()} | All Rights Reserved
           </p>
-          <ThemeToggler className="max-lg:order-2" />
+          <ThemeToggler />
         </div>
       </div>
     </footer>
