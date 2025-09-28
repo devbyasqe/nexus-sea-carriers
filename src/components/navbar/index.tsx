@@ -105,7 +105,7 @@ const Navbar = () => {
         >
           <Link
             href={"/"}
-            className="text-success inline-flex h-8 items-center justify-center text-3xl font-semibold tracking-tighter mix-blend-exclusion"
+            className="dark:text-success inline-flex h-8 items-center justify-center text-3xl font-semibold tracking-tighter text-primary "
           >
             <LogoIcon className="size-full" />
           </Link>
