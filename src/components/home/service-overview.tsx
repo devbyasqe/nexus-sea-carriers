@@ -11,8 +11,8 @@ const ServiceOverview = () => {
     <section className="relative mx-auto w-[93%] max-w-5xl min-w-80 overflow-clip sm:max-md:max-w-[40rem]">
       <div className="grid gap-8 overflow-clip px-4 py-14 md:grid-cols-2">
         <MotionContainer className="text-pretty">
-          <p className="bg-primary w-fit rounded-full px-2 py-1 font-medium text-white">
-            <ShimmerText className="from-black via-white to-black">
+          <p className="bg-primary w-fit rounded-full px-2 py-1 font-medium">
+            <ShimmerText  >
               Service Overview
             </ShimmerText>
           </p>

@@ -18,6 +18,7 @@ export const MotionContainer = ({
   variant?: keyof typeof variantsMap;
 }) => (
   <motion.div
+    layout
     variants={variantsMap[variant]}
     initial="hidden"
     whileInView="visible"

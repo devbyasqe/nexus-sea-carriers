@@ -23,6 +23,7 @@ export const GrowingContainer = ({
       )}
     >
       <motion.div
+        layout
         className={cn("h-full")}
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}

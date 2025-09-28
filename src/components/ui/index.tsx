@@ -13,7 +13,7 @@ export const ShimmerText = ({
   return (
     <Comp
       className={cn(
-        "animate-shimmer-text relative inline-block bg-gradient-to-l from-25% to-85% [background-size:200%_100%] bg-clip-text text-transparent",
+        "animate-shimmer-text relative inline-block bg-gradient-to-l from-black from-25% via-white to-black to-85% [background-size:200%_100%] bg-clip-text text-transparent",
         className,
       )}
     >
