@@ -70,9 +70,9 @@ const HomeHero = () => {
             <p className="bg-accent/75 w-fit rounded-full px-3 py-1.5 font-medium backdrop-blur">
               Trusted Worldwide Shipping
             </p>
-            <div className="mt-3 font-serif text-balance">
-              <h1>Delivering Across Oceans. On Time. Every Time.</h1>
-            </div>
+            <h1 className="mt-3 text-balance text-white">
+              Delivering Across Oceans. On Time. Every Time.
+            </h1>
           </motion.div>
           <motion.div
             custom={"left"}

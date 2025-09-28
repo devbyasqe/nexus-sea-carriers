@@ -12,7 +12,8 @@ const buttonVariants = cva(
         primary: "bg-primary text-white",
         success: "bg-success text-black",
         muted: "bg-muted text-foreground",
-        link: "text-foreground hover:text-primary focus-visible:text-primary",
+        theme:
+          "group-disabled/button:bg-background group-disabled/button:text-foreground-muted group-disabled/button:border",
       },
       buttonSize: {
         default: "h-9 gap-2 text-sm font-medium whitespace-nowrap",

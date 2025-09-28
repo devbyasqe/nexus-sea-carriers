@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeProvider from "@/components/providers/theme";
 import Toaster from "@/components/providers/sonner";
 import LenisProvider from "@/components/providers/lenis";
+import Footer from "@/components/footer";
 
 const reddit = Reddit_Sans({
   variable: "--font-reddit-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           <LenisProvider />
           <main>{children}</main>
           <Toaster />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -67,7 +67,15 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
   h1 {
-    @apply text-5xl font-semibold tracking-tight transition-all duration-300 lg:text-6xl;
+    @apply font-serif text-5xl font-semibold tracking-tight transition-all duration-300 lg:text-6xl;
+  }
+
+  h2 {
+    @apply font-serif text-3xl font-semibold tracking-tight transition-all duration-300 lg:text-4xl;
+  }
+
+  h3 {
+    @apply font-serif text-xl font-semibold tracking-tight transition-all duration-300 lg:text-2xl;
   }
 }
 
