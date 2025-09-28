@@ -108,6 +108,7 @@ const ScrambleButton = ({ label }: { label: string }) => {
   return (
     <button
       onMouseEnter={scramble}
+      onFocus={scramble}
       onClick={scramble}
       className="text-foreground-muted hover:text-primary focus-visible:text-primary inline-flex cursor-pointer flex-wrap whitespace-nowrap uppercase transition-all duration-300 hover:font-medium focus-visible:font-medium"
     >

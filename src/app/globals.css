@@ -79,6 +79,16 @@
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+
+  --animate-shimmer-text: shimmer-text 4s linear infinite;
+  @keyframes shimmer-text {
+    0% {
+      background-position: 200% 0%;
+    }
+    100% {
+      background-position: -200% 0%;
+    }
+  }
 }
 
 @layer base {

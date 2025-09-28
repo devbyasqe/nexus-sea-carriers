@@ -82,7 +82,7 @@ function Button({
       {svgIcon && (
         <div
           className={cn(
-            "-ms-1",
+            "-ms-1 group-hover/button:rotate-45 group-focus-visible/button:rotate-45",
             buttonVariants({
               variant,
               iconSize,

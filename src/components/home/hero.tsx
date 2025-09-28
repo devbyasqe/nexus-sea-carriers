@@ -61,9 +61,8 @@ const HomeHero = () => {
           <motion.div
             custom={"right"}
             variants={verticalInVariant}
-            initial="enter"
-            animate="center"
-            exit="exit"
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 0.3, ease: "linear" }}
             className="md:col-span-7"
           >
@@ -77,9 +76,8 @@ const HomeHero = () => {
           <motion.div
             custom={"left"}
             variants={verticalInVariant}
-            initial="enter"
-            animate="center"
-            exit="exit"
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 0.3, ease: "linear" }}
             className="md:col-span-5"
           >

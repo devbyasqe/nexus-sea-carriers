@@ -6,7 +6,7 @@ import {
   TeslaIcon,
   ToyotaIcon,
 } from "../svg/brands";
-import Marquee from "../ui/marquee";
+import { Marquee } from "../ui";
 
 const partnersList = [
   { icon: <FerrariIcon />, label: "Ferrari" },

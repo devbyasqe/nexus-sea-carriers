@@ -1,17 +1,44 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-type TMarquee = {
+export const ShimmerText = ({
+  as: Comp = "span",
+  children,
+  className,
+}: {
+  as?: React.ElementType;
+  children: string;
   className?: string;
-  reverse?: boolean;
-  showMask?: boolean;
-  pauseOnHover?: boolean;
-  children?: React.ReactNode;
-  vertical?: boolean;
-  repeat?: number;
+}) => {
+  return (
+    <Comp
+      className={cn(
+        "animate-shimmer-text relative inline-block bg-gradient-to-l from-25% to-85% [background-size:200%_100%] bg-clip-text text-transparent",
+        className,
+      )}
+    >
+      {children}
+    </Comp>
+  );
 };
 
-const Marquee = ({
+export const Input = ({
+  className,
+  type,
+  ...props
+}: React.ComponentProps<"input">) => (
+  <input
+    type={type}
+    data-slot="input"
+    className={cn(
+      "placeholder:text-foreground-muted bg-background flex h-9 items-center rounded-xl border py-1 ps-10 pe-3 text-sm outline-none",
+      className,
+    )}
+    {...props}
+  />
+);
+
+export const Marquee = ({
   className,
   reverse,
   pauseOnHover = false,
@@ -20,7 +47,15 @@ const Marquee = ({
   repeat = 4,
   showMask = true,
   ...props
-}: TMarquee) => {
+}: {
+  className?: string;
+  reverse?: boolean;
+  showMask?: boolean;
+  pauseOnHover?: boolean;
+  children?: React.ReactNode;
+  vertical?: boolean;
+  repeat?: number;
+}) => {
   return (
     <div
       {...props}
@@ -55,5 +90,3 @@ const Marquee = ({
     </div>
   );
 };
-
-export default Marquee;
