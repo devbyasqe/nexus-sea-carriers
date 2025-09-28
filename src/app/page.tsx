@@ -4,6 +4,7 @@ import KeyBenefit from "@/components/home/key-benifit";
 import OceanServices from "@/components/home/ocean-services";
 import Partners from "@/components/home/partners";
 import ServiceOverview from "@/components/home/service-overview";
+import SuccessStories from "@/components/home/success-stories";
 import React from "react";
 
 const HomePage = () => (
@@ -12,8 +13,9 @@ const HomePage = () => (
     <Partners />
     <ServiceOverview />
     <OceanServices />
-    <HowItWork />*/}
-    <KeyBenefit />
+    <HowItWork />
+    <KeyBenefit />*/}
+    <SuccessStories />
   </>
 );
 
