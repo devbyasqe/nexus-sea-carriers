@@ -1,5 +1,6 @@
 import HomeHero from "@/components/home/hero";
 import HowItWork from "@/components/home/how-it-work";
+import KeyBenefit from "@/components/home/key-benifit";
 import OceanServices from "@/components/home/ocean-services";
 import Partners from "@/components/home/partners";
 import ServiceOverview from "@/components/home/service-overview";
@@ -9,9 +10,10 @@ const HomePage = () => (
   <>
     {/* <HomeHero />
     <Partners />
-    <ServiceOverview />*/}
+    <ServiceOverview />
     <OceanServices />
-    <HowItWork />
+    <HowItWork />*/}
+    <KeyBenefit />
   </>
 );
 

@@ -24,7 +24,10 @@ export const HoverBorder = ({ className }: { className?: string }) => {
   return (
     <motion.div
       ref={borderRef}
-      className={cn("bg-primary absolute inset-0 -z-10 rounded-xl pointer-events-none", className)}
+      className={cn(
+        "bg-primary pointer-events-none absolute inset-0 -z-10 rounded-xl",
+        className,
+      )}
       style={{
         WebkitMaskImage: maskImage,
         maskImage: maskImage,
