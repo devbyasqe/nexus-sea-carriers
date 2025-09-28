@@ -57,6 +57,28 @@
   --color-white: hsl(var(--white));
 
   --color-border: hsl(var(--border));
+
+  --animate-marquee-horizontal: marquee-horizontal var(--duration) linear
+    infinite;
+
+  @keyframes marquee-horizontal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 @layer base {
