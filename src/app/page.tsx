@@ -1,3 +1,4 @@
+import Faq from "@/components/home/faq";
 import HomeHero from "@/components/home/hero";
 import HowItWork from "@/components/home/how-it-work";
 import KeyBenefit from "@/components/home/key-benifit";
@@ -14,8 +15,9 @@ const HomePage = () => (
     <ServiceOverview />
     <OceanServices />
     <HowItWork />
-    <KeyBenefit />*/}
-    <SuccessStories />
+    <KeyBenefit />
+    <SuccessStories />*/}
+    <Faq />
   </>
 );
 
