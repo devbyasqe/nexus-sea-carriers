@@ -105,7 +105,7 @@ const Navbar = () => {
         >
           <Link
             href={"/"}
-            className="dark:text-success inline-flex h-8 items-center justify-center text-3xl font-semibold tracking-tighter text-primary "
+            className="dark:text-success text-primary inline-flex h-8 items-center justify-center text-3xl font-semibold tracking-tighter"
           >
             <LogoIcon className="size-full" />
           </Link>
@@ -154,7 +154,7 @@ const MobileNav = () => {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed inset-0 top-17 z-40 mx-auto max-w-5xl py-1 sm:max-md:max-w-[40rem]"
     >
-      <div className="mx-auto flex h-full w-[93%] flex-col gap-6 overflow-auto rounded-xl bg-black/75 px-6 py-10 text-white backdrop-blur">
+      <div className="bg-background/75 mx-auto flex h-full w-[93%] flex-col gap-6 overflow-auto rounded-xl px-6 py-10 backdrop-blur">
         {headerNavLinks.map(({ label, dropdown }) =>
           !dropdown ? (
             <button
