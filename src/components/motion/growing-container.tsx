@@ -27,7 +27,7 @@ export const GrowingContainer = ({
         className={cn("h-full")}
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        viewport={{ amount: 0.25, once: true }}
+        viewport={{ amount: 0.35, once: true }}
         transition={{ duration: 1, ease: "linear" }}
       >
         {children}

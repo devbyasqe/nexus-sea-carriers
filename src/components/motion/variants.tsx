@@ -22,3 +22,8 @@ export const rightVariant: Variants = {
   hidden: { x: 100, opacity: 0, filter: "blur(15px)" },
   visible: { x: 0, opacity: 1, filter: "blur(0px)" },
 };
+
+export const blurVariant: Variants = {
+  hidden: { scale: 0.9, filter: "blur(12px) grayscale(1)" },
+  visible: { scale: 1, filter: "blur(0px) grayscale(0)" },
+};
